@@ -1,5 +1,7 @@
 package com.demo.model;
 
+import com.demo.model.new1.New1;
+
 public class Employee {
 
 	String firstName;
