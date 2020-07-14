@@ -1,4 +1,4 @@
-package tuturial.java.inheritance;
+package tutorial.java.inheritance;
 
 public class A {
 
