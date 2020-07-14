@@ -1,0 +1,60 @@
+
+1. create Address class (called javaBean/pojo)
+	Properties: all are in private modifiers 
+	   - flat/door/block no : short
+	   - name of premises/building : string
+	   - road/street : string
+	   - landmark/post office : string
+	   - area/locality : string
+	   - talika/subdivision : string
+	   - town/city/district : string
+	   - state/union teritory : string
+	   - pincode : short
+	   - currunt resedential is own or rented : boolean
+	
+	functions:
+       - all above getter/setters	
+
+	   
+2. create class PersnoalInformation (called javabeans/pojo)	   
+	Properties: all are in private modifiers 
+       - contact details : long
+       - email id : string
+       - dob : Date
+       - marital status : char      
+       - age : short
+
+	functions:
+       - all above getter/setters	
+
+	   
+3. create University class 
+   Properties: 
+     - universityNumber: string (might be alphanumeric)
+	 - Address (above created address class)
+	 - year of establishment : short
+
+	functions:
+       - all above getter/setters	
+
+
+4. create Employee class
+   Properties: 
+	 - Address (above created address class)
+	 - type (principal, professor, teacher, intern) : string
+
+	 
+5. create Collage1, Collage2, ... Collage n class 
+   - extends this class by University
+   
+   Properties: 
+	 - Address (above created address class)
+     - Employee[] (add respective employees)
+     - University 
+     
+6. create MainApp class
+   - create Collage[], add more than 5 Collage object in it 
+   - Print all above details on console
+        
+   	
+     
