@@ -1,0 +1,16 @@
+
+class, variable, method
+
+- public 
+  - anywhere
+   
+- private 
+  - within class/abstract class
+  - not private in interface
+
+- <java default behaviour>
+  - package level access
+
+- protected
+  - within package
+  

@@ -1,0 +1,22 @@
+ 1. diff of inheritance and abstarct class
+ 
+ 
+ 2. abstract
+ 	- class level
+ 	- method level 
+ 	
+ 	
+ 3. final keyword
+      - final variable
+	  - final method
+	  
+	  
+**Note:
+
+1. interface after javap
+
+interface A {
+  public static final int a;
+  public abstract int getAge();
+  public abstract void setDriverUrl();
+}	  
