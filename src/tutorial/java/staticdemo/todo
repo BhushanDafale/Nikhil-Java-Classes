@@ -1,0 +1,28 @@
+ 
+ -> static - common to all referances
+    inner class -
+	**example:	
+		// outer class    
+		class A {
+			// inner class
+			static class B {
+			}
+		}
+	
+	variable -
+	block - 
+	method -
+	
+	
+ - static variable loads at the time of class loading
+ - static variable use in static block/method
+    -- not possible to use in non-static block/method
+    
+    
+    
+Java Class Loading
+
+1. class load
+2. static block/variable/method
+3. constructor - on every call instance block will call
+4. instance variable
