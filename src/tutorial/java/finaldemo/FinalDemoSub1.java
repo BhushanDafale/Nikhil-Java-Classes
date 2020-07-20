@@ -1,4 +1,4 @@
-package tutorial.java.staticdemo.finaldemo;
+package tutorial.java.finaldemo;
 
 public class FinalDemoSub1 extends FinalDemoSuper {
 
