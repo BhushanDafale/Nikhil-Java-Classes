@@ -1,0 +1,23 @@
+
+ -> final = constant
+    class - cannot extends (no inheritance)
+    
+    variable - cannot re-initialized 
+     **example: 
+         final int a = 10;
+         a = 20; // CE
+    
+    method - can not override  
+ 
+ -> static 
+    inner class -
+	**example:	
+		// outer class    
+		class A {
+			// inner class
+			static class B {
+			}
+		}
+	
+	variable -
+	method - 	
