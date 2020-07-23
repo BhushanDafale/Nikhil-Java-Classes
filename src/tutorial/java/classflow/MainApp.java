@@ -2,34 +2,32 @@ package tutorial.java.classflow;
 
 public class MainApp {
 	
-	// object call
+	// object call -- only for instance members (variable/method)
 //	MainApp mp = new MainApp();
 	
-	// static call
+	// static call -- for static members (variable/method)
 	// MainApp or mp
 	
 	// instance variable
 	int a = 10; 
 	
 	// static variable
-	static int b = 10; 
+	static int b = 10; 	
 
-	
+	// instance block
+	{
+		System.out.println("--instance block");
+	}
 	
 	// static block
 	static {
 		System.out.println("--static block" + b);		
 	}
 	
+	// constructor - use to create object and allocate memory to instance variables
 	public MainApp() {
 		System.out.println("--MainApp Constructor");		
 	}
-	
-	// instance block
-	{
-		System.out.println("--instance block");
-	}
-		
 	
 	// instance method
 	public void display() {
