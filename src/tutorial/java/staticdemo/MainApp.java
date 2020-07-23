@@ -7,6 +7,10 @@ public class MainApp {
 	int b = 20;
 	
 	public static void main(String[] args) {
+
+		Object obj = new Object();
+		obj.
+	
 		
 		MainApp ma1 = new MainApp();
 		ma1.b++; // b = b + 1;

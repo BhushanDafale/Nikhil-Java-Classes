@@ -1,0 +1,7 @@
+
+ - class load
+ - static 1. block 2. (variable/method/class/enum) -(sequentially)
+    - static block
+- instance block
+- constructor
+- instance - variable/method/class/enum (sequentially)

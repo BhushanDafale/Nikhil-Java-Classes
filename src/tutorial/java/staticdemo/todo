@@ -20,7 +20,7 @@ static keyword:
 	-> Variable
 	    - can be create at class level only, essentially a global variable
 	    - single copy will create and divided among all object at the class level
-	    - 
+	    
 	-> Method
 	    - common example is main(String[]) method
 	    - they can call other static method only
@@ -39,3 +39,8 @@ static keyword:
 	    - Doesn't need outer class object/reference 
 	    - cannot access non-static members of outer class
 	 	   
+	 	   
+	 	   
+Polymorphisum 
+ - overloading - compile time/static poly
+ - overriding - runtime time/dynamic poly	 	   
