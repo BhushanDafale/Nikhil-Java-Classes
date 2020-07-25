@@ -1,0 +1,35 @@
+
+enum:
+
+Q. What is enum?
+- Special type of class which provide support to add group of constant.
+
+Q. Why enum called as special class?
+- internally java compiler treat enum as class. 
+- Whatever implementation we can achieve using class concept we can do the same in enum also with group of constants.
+
+Q. Whats the part of enum in inheritance?
+- by default enum is final, so cannot extends by any other class
+- by default extends java.lang.Enum class, so cannot extends another class.
+- so inheritance is already managed. but no other class can it's sub class or super class.
+
+Q. Write internal implementation of enum for following example.
+1.
+enum Level {
+	LOW, MEDIUM, HIGH
+}
+
+2.
+public enum Food {
+	HAMBURGER(7), FRIES(2), HOTDOG(3), ARTICHOKE(4);
+}
+
+Q. How to access enum constants?
+- by enum name because every enum constants are static.
+
+Q. Can we create methods inside enums?
+- Yes.
+- We can create static and not-static enums inside enum
+- Even we can create main method inside enum, so we can consider enum as base/main class of our program (but this is not recommended)
+
+    
