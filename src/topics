@@ -1,0 +1,115 @@
+1# Reserve Keywords 
+	**Reserved word for data-types (8)
+		byte, short, int, long, float, double, char, boolean
+	**Reserved words for flow control (11)
+		if, else, switch, case, default, while, do, for, break, continue, return	
+	**Reserved words for modifiers (11)
+		public, private, protected, final, abstract, static, synchronized, native, strinctfp, transists, volatile	
+	**Reserved words for exception handeling (5)
+		try, catch, finally, throw, throws	
+	**class related keywords (7)
+		class, interface, package, import, extends, implements, abstract	
+	**object related keywords (4)
+		new, instanceof, super, this
+	**void -- if method won't return anything
+
+2# java first program
+
+3# command line argument 
+
+4# Data-types with it's implicit and explicit type casting
+   - size, capacity
+   - 1.7 enhancement  
+   - default values
+   		- integral -> 0
+   		- floating point -> 0.0
+   		- boolean -> false
+   		- reference type -> null
+   		- char -> \u
+   
+5# OOP
+   - encapsulation
+   - abstraction
+   - inheritance
+       - is-A (extends keywords)
+       - has-A 
+   - polymorphism
+       - overloading
+       - overriding
+       
+5# class-object relation
+   - instance block
+   - constructor 
+   - instance variable/method
+
+6# array
+	- declaration
+	- initialization
+
+6# static keyword
+   - block
+   - variable 
+   - method
+   - class/enum
+   
+7# final keyword
+   - variable 
+   - method
+   - class     
+
+8# modifiers 
+   - public
+   - private
+   - protected 
+   - package level (default java access)
+   
+9# Java Methods
+   - method signature 
+      - modifiers
+      - access specifier 
+      - return type
+      - var args
+
+10# execution flow    
+   - static block
+   - static variable/method
+   - instance block
+   - constructor 
+   - instance variable/method
+
+11# java coding standard
+   - java beans/pojo
+   - class/method names       
+   - variable name
+       - final variable
+       
+12# Operator and Assingment 
+   - increment & decrement operator
+       - pre (++a, --a)
+       - post (a++, a--)         
+   - Arithmetic operator (+, -, *, /, %) 
+   - string concatenation (+)      
+   - relational operator (<, <=, >, >=)
+   - equality operator (!=, ==)
+   - instanceof operator
+   - bitwise operator (&, |, ^, ~)
+   - not operator (!)
+   - conditional operator (&&, ||)
+   - compound assignment operator (+=, -=, *=, /=, %=, &=, |=, ^=, >>=, >>>=, <<=)
+   - conditional operator (?, :)
+   - new operator 
+   - [] operator
+   
+13# flow control
+   - if-else 
+   - switch..case..default
+      - allowed type -> byte(Byte), short(Short), char(Character), int(Integer), enum, String
+   - while
+   - do..while
+   - for, for-each
+   - break
+   - continue 
+   - return
+   - try..catch..finally 
+   - assert              
+                   

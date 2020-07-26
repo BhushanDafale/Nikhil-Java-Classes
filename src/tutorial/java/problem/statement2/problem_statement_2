@@ -2,9 +2,17 @@
 Railway Reservation Systems
 ---------------------------
 
+[10] 
+	[0] - 161412628333
+	[1] - 1614126w674r7323
+	[2] - 161412qwqeqwe33
+	
+
 once program run show following options:
 1# New Booking
+	-> 
 2# Cancel Booking
+ 	-> enter PNR?
 3# Show PNR Status
 4# Stop
 	

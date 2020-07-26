@@ -9,7 +9,7 @@ public class MainApp {
 //			System.out.println("--" + level.getLevel());
 //		}
 		
-		String employeeType = EmployeeType.PRINCIPAL.getType();
+		String employeeType = EmployeeType.INTERN.getType();
 		System.out.println("employeeType - " + employeeType);
 		
 	}
