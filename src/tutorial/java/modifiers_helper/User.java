@@ -6,6 +6,7 @@ public class User extends Helper {
 
 	public void use() {
 		
+		
 		/*
 		 * LHS = RHS
 		 * type = object

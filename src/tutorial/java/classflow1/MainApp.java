@@ -1,4 +1,4 @@
-package tutorial.java.classflow;
+package tutorial.java.classflow1;
 
 public class MainApp {
 	
