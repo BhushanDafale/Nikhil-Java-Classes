@@ -1,0 +1,29 @@
+
+Where to apply:
+	1. class
+		- inner class 
+	2. variable
+		- static
+		- instance 
+		- local 
+	3. method
+		- static
+		- instance
+	4. interface
+		- public
+	5. enum
+		
+
+- public 
+  - anywhere
+   
+- private 
+  - within class/abstract class
+  - not private in interface
+
+- <java default behaviour>
+  - package level access
+
+- protected
+  - within package
+  - diff package - can access by using child class object only
