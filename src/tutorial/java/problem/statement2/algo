@@ -1,13 +1,13 @@
 
-1. create Train records
-2. create nextBookingindex = 0;
-2. create Booking[] bookings
-3. while.. enum -> ReservationOptions
+1. create Train records --> done
+2. create nextBookingindex = 0; --> done
+3. create Booking[] bookings --> done
+4. switch.. enum -> ReservationOptions --> done
 	3.1 - New Booking
 	3.2 - Cancel Booking
 	3.3  - Show PNR Status/Passenger Details
 	3.4 - Exit
-4. 
+5. 
 	3.1 # New Booking -> 
 		- create Booking object
 		- show all trains options -> Show all trains data (train no - train name)
@@ -27,6 +27,6 @@
 			3.3.5 - all	
 	3.3 # Show PNR ->
 		- Enter PNR number -> 8835831238
-5. Repeat step 3
-6. 3.4 # Exit -> program stop
+6. Repeat step 3 --> done
+7. 3.4 # Exit -> program stop --> done
 													
