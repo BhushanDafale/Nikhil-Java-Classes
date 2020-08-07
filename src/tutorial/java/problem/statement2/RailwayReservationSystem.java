@@ -9,14 +9,6 @@ public class RailwayReservationSystem {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("--------Available Trains---------");
-		// create Train records
-		Train[] trains = RecordUtility.getTrains();
-		for (Train train : trains) {
-			System.out.println("Train Number: " + train.getNumber());
-		}
-		System.out.println("---------------------------------");
-		
 		Scanner scan = new Scanner(System.in);
 		
 		System.err.print("How many bookings? -> ");
@@ -36,6 +28,24 @@ public class RailwayReservationSystem {
 			System.out.print("Please enter your choice -> ");
 			option = scan.nextInt();
 			
+			switch (option) {
+			case 1:
+				BookingSystem.startNewBooking(bookings, nextBookingindex);
+				nextBookingindex++;
+				break;
+			case 2:
+				BookingSystem.cancelBooking();
+				break;
+			case 3:
+				BookingSystem.showBooking();
+				break;
+			case 4:
+				System.out.println("--> Exit");
+				break;
+			default:
+				System.err.println("-- Wrong option entered");
+				break;
+			}
 		} while(option != EXIT);
 				
 		System.err.println("--------------Reservation is completed-------------");

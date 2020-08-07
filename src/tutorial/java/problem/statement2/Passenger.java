@@ -8,7 +8,7 @@ public class Passenger {
 	private String name;
 	private int age;
 	private char gender;
-	private int seatNumber;
+	private String seatNumber;
 	private BookingStatus bookingStatus;
 	private Date bookedOn;
 	private Date cancelledOn;
@@ -46,11 +46,11 @@ public class Passenger {
 		this.gender = gender;
 	}
 
-	public int getSeatNumber() {
+	public String getSeatNumber() {
 		return seatNumber;
 	}
 
-	public void setSeatNumber(int seatNumber) {
+	public void setSeatNumber(String seatNumber) {
 		this.seatNumber = seatNumber;
 	}
 

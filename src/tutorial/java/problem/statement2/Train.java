@@ -5,6 +5,7 @@ import java.util.Date;
 public class Train {
 
 	private int number;
+	private String name;
 	private Date arrival;
 	private Date departure;
 
@@ -14,6 +15,14 @@ public class Train {
 
 	public void setNumber(int number) {
 		this.number = number;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public Date getArrival() {

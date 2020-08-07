@@ -9,7 +9,7 @@ public class Booking {
 	private Date bookingOn;
 	private BookingStatus status;
 	private Date canceledOn;
-	private Passenger passenger;
+	private Passenger[] passengers;
 	private Train train;
 	private Coach coach;
 
@@ -53,12 +53,12 @@ public class Booking {
 		this.canceledOn = canceledOn;
 	}
 
-	public Passenger getPassenger() {
-		return passenger;
+	public Passenger[] getPassenger() {
+		return passengers;
 	}
 
-	public void setPassenger(Passenger passenger) {
-		this.passenger = passenger;
+	public void setPassenger(Passenger[] passengers) {
+		this.passengers = passengers;
 	}
 
 	public Train getTrain() {
@@ -80,7 +80,7 @@ public class Booking {
 	@Override
 	public String toString() {
 		return "Booking [bookingId=" + bookingId + ", pnr=" + pnr + ", bookingOn=" + bookingOn + ", status=" + status
-				+ ", canceledOn=" + canceledOn + ", passenger=" + passenger + ", train=" + train + ", coach=" + coach
+				+ ", canceledOn=" + canceledOn + ", passengers=" + passengers + ", train=" + train + ", coach=" + coach
 				+ "]";
 	}
 

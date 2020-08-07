@@ -9,8 +9,8 @@
 	3.4 - Exit
 5. 
 	3.1 # New Booking -> 
-		- create Booking object
-		- show all trains options -> Show all trains data (train no - train name)
+		- create Booking object -- done
+		- show all trains options -> Show all trains data (train no - train name) -- done
 		- set respective fields
 		- create Passenger[4]
 		 	- enter all passenger records
