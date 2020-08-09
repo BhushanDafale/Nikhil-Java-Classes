@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class RailwayReservationSystem {
 
-	private static int nextBookingindex = 0;
 	private static final int EXIT = 4;
 	
 	public static void main(String[] args) {
@@ -30,8 +29,7 @@ public class RailwayReservationSystem {
 			
 			switch (option) {
 			case 1:
-				BookingSystem.startNewBooking(bookings, nextBookingindex);
-				nextBookingindex++;
+				BookingSystem.startNewBooking(bookings);
 				break;
 			case 2:
 				BookingSystem.cancelBooking();

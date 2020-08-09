@@ -9,6 +9,18 @@ public class Train {
 	private Date arrival;
 	private Date departure;
 
+	public Train() {
+		super();
+	}
+
+	public Train(int number, String name, Date arrival, Date departure) {
+		super();
+		this.number = number;
+		this.name = name;
+		this.arrival = arrival;
+		this.departure = departure;
+	}
+
 	public int getNumber() {
 		return number;
 	}
