@@ -1,0 +1,17 @@
+
+java.lang.Object
+	- direct or indirect superclass of any java class
+
+	- toString()
+	- getClass()
+	- hashCode()
+	- equals(Object obj)
+	- clone() **
+	- finalize() **
+
+syncronization:
+	- notify()
+	- notifyAll()
+	- wait()
+	- wait(long timeout)
+	- wait(long timeout, int nanos)
