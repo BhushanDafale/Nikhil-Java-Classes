@@ -25,7 +25,7 @@ public class AritmaticOpDemo {
 		int a1 = 10;
 		int b1 = 20;
 		
-		a1 += b1; // a1 = a1 + b1;
+		a1 *= b1; // a1 = a1 * b1;
 		
 		
 		
