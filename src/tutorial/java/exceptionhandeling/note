@@ -1,0 +1,24 @@
+
+# What is exception handling?
+-> An exception is an abnormal condition which occurs during run time and disrupts the normal flow of the program.
+-> Exception must be handled to maintain the normal flow of the program. if not handled, rest of the program will not execute.
+
+
+# java keywords for exception handling.
+-> try..catch..finally
+-> throw 
+-> throws
+
+
+# Way to write above keyword.
+-> try..catch
+-> try..finally
+-> try..catch..finally
+
+
+# Name few exception.
+-> NullPointerException
+-> ArithmeticException
+-> ClassCastException
+-> NumberFormatException
+->  
