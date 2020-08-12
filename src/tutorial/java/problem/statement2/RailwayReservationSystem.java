@@ -35,7 +35,7 @@ public class RailwayReservationSystem {
 				BookingSystem.cancelBooking();
 				break;
 			case 3:
-				BookingSystem.showBooking();
+				BookingSystem.showBooking(bookings);
 				break;
 			case 4:
 				System.out.println("--> Exit");

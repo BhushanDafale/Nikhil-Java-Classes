@@ -4,20 +4,20 @@ import java.util.Date;
 
 public class Booking {
 
-	private int bookingId;
+	private String bookingId;
 	private int pnr;
 	private Date bookingOn;
 	private BookingStatus status;
 	private Date canceledOn;
 	private Passenger[] passengers;
 	private Train train;
-	private Coach coach;
+	private String coach;
 
-	public int getBookingId() {
+	public String getBookingId() {
 		return bookingId;
 	}
 
-	public void setBookingId(int bookingId) {
+	public void setBookingId(String bookingId) {
 		this.bookingId = bookingId;
 	}
 
@@ -69,11 +69,11 @@ public class Booking {
 		this.train = train;
 	}
 
-	public Coach getCoach() {
+	public String getCoach() {
 		return coach;
 	}
 
-	public void setCoach(Coach coach) {
+	public void setCoach(String coach) {
 		this.coach = coach;
 	}
 

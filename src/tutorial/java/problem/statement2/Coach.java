@@ -5,13 +5,10 @@ public enum Coach {
 	FIRSTCLASS("1A"),
 	SECONDCLASS("2A"),
 	THIRDCLASS("3A"),
-	SL,
-	OTHER;
+	SL("sl"),
+	OTHER("otr");
 	
 	private String coach;
-	
-	private Coach() {
-	}
 	
 	private Coach(String coach) {
 		this.coach = coach;

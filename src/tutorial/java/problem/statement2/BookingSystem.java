@@ -22,12 +22,19 @@ public abstract class BookingSystem extends BookingWorkflow {
 		int trainNumber = scan.nextInt();
 		Train train = getTrainInfo(trainNumber);
 		if(train != null) {
+			int id = 1;
+			
 			booking.setTrain(train);
+			booking.setBookingId("1:booking");
+			booking.setBookingOn(new Date());
+			booking.setCoach(Coach.FIRSTCLASS.getCoach());
+			booking.setStatus(BookingStatus.BOOKED);
+			booking.setPnr(nextPnr);
+			
 			System.out.print("Passenger Count? (Max 4 allowed) -> ");
 			int passengerCount = scan.nextInt();
 			Passenger[] passengers = new Passenger[passengerCount];
 
-			int id = 1;
 
 			while (passengerCount != 0) {
 				Passenger passenger = new Passenger();
@@ -60,6 +67,7 @@ public abstract class BookingSystem extends BookingWorkflow {
 			
 			bookings[nextBookingindex] = booking;
 			nextBookingindex++;
+			nextPnr++;
 		} else {
 			System.err.println("------Invalid train number------");
 		}
@@ -88,8 +96,40 @@ public abstract class BookingSystem extends BookingWorkflow {
 		System.out.println("-- cancel");
 	}
 
-	public static void showBooking() {
-		System.out.println("-- Show");
+	public static void showBooking(Booking[] bookings) {
+		System.err.print("------------------------------------");
+		System.out.print("\nEnter PNR -> ");
+		int pnr = scan.nextInt();
+		
+		boolean flag = false;
+		
+		for (Booking booking : bookings) {
+			if(booking != null && pnr == booking.getPnr()) {				
+				Train train = booking.getTrain();
+				System.out.println("Train No: " + train.getNumber() + ", Train Name: " + train.getName());
+				System.out.println("Arrival: " + train.getArrival() + ", Departure: " + train.getDeparture());
+				System.out.println("_______________________________________________");
+				
+				System.out.println("PNR: " + booking.getPnr() + ", Booking Status: " + booking.getStatus());
+				System.out.println("_______________________________________________");
+				
+				Passenger[] passengers = booking.getPassenger();
+				for(Passenger passenger : passengers) {
+					System.out.println(passenger.getId() + " Passenger Details------");
+					System.out.println("Name: " + passenger.getName() + ", Gender: " + passenger.getGender());
+					System.out.println("Age: " + passenger.getAge() + ", Seat No: " + passenger.getSeatNumber());
+					System.out.println("Status: " + passenger.getBookingStatus());
+				}
+				
+				flag = true;
+				break;
+			}
+		}
+		
+		if(!flag) {
+			System.err.println("-----Invalid PNR number-----");
+		}
+		System.out.println("*******************************************************");
 	}
 
 }
