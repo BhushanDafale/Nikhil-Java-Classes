@@ -1,24 +1,96 @@
 
 # What is exception handling?
+----------------------------------------
 -> An exception is an abnormal condition which occurs during run time and disrupts the normal flow of the program.
 -> Exception must be handled to maintain the normal flow of the program. if not handled, rest of the program will not execute.
 
 
 # java keywords for exception handling.
+----------------------------------------
 -> try..catch..finally
 -> throw 
 -> throws
 
+-> try: keep those statements which may throw exceptions during run time
+-> catch: This block handles the exceptions thrown by try block. It takes one argument of type java.lang.Exception.
+-> finally: Whether exception is thrown or not and thrown exception is caught or not, this block will be always executed.
+
 
 # Way to write above keyword.
+----------------------------------------
 -> try..catch
 -> try..finally
 -> try..catch..finally
 
 
+# try, catch and finally blocks form one unit. i.e You can’t keep other statements in between try, catch and finally blocks.
+----------------------------------------
+
+
 # Name few exception.
+----------------------------------------
 -> NullPointerException
 -> ArithmeticException
 -> ClassCastException
 -> NumberFormatException
-->  
+
+
+# exception tree
+----------------------------------------
+
+
+# multiple catch block
+----------------------------------------
+
+
+# multiple exception in same catch block
+----------------------------------------
+
+
+# places where we can write try..catch.finally
+----------------------------------------
+
+
+# checked and un-checked exception
+----------------------------------------
+-> checked/compile-time exception:
+	- Checked exceptions are known to compiler
+
+-> unchecked/runtime exception:
+	- Unchecked exceptions are not known to compiler
+
+
+# Nested try..catch..finally
+----------------------------------------
+-> Nested try blocks are useful when different statements of try block throw different types of exceptions.
+
+
+# throws keyword
+----------------------------------------
+
+
+# exception handling methods
+----------------------------------------
+-> toString()
+-> getMessage()
+-> printStackTrace()
+
+
+# Can one statement throw multiple exception?
+----------------------------------------
+-> yes, that's why we might need to use multiple catch block or multiple exception in same catch block
+
+
+# return value from try..catch..finally
+----------------------------------------
+-> If finally block returns a value then try and catch blocks may or may not return a value.
+-> If finally block does not return a value then both try and catch blocks must return a value.
+-> If try-catch-finally blocks are returning a value according to above rules, then you should not keep any statements 
+   after finally block. Because they become unreachable and in Java, Unreachable code gives compile time error.
+-> finally block overrides any return values from try and catch blocks.
+-> finally block will be always executed even though try and catch blocks are returning the control.
+
+
+# Throwing and Re-throwing and exception
+----------------------------------------
+-> 
