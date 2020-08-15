@@ -65,7 +65,14 @@
 -> Nested try blocks are useful when different statements of try block throw different types of exceptions.
 
 
-# throws keyword
+# Can one statement throw multiple exception?
+----------------------------------------
+-> yes, that's why we might need to use multiple catch block or multiple exception in same catch block
+
+
+# Throwing and Re-throwing and exception
+----------------------------------------
+# throw keyword
 ----------------------------------------
 
 
@@ -76,9 +83,15 @@
 -> printStackTrace()
 
 
-# Can one statement throw multiple exception?
+# throws keyword
 ----------------------------------------
--> yes, that's why we might need to use multiple catch block or multiple exception in same catch block
+-> Multiple exceptions can be declared using throws keyword separated by commas.
+-> The main use of throws keyword in java is that an exception can be propagated through method calls.
+-> Even constructor can use throws keyword.For this, object creation statement must be enclosed in try-catch blocks.
+-> When a method is throwing unchecked type of exceptions, then you need not to mention it using throws keyword. 
+   But for a method throwing checked type of exceptions, you must declare it with throws keyword or enclose the statement 
+   which is throwing an exception in try-catch block. (We will discuss about this in detail while covering checked and unchecked exceptions).
+
 
 
 # return value from try..catch..finally
@@ -91,6 +104,10 @@
 -> finally block will be always executed even though try and catch blocks are returning the control.
 
 
-# Throwing and Re-throwing and exception
-----------------------------------------
--> 
+\n - new line
+\t - tab										
+
+
+
+
+

@@ -27,7 +27,9 @@ public class MainApp {
 		try {
 			method_A();
 		} catch (Exception e) {
-			System.out.println("-AE----");
+			System.out.println("-----" + e);
+			System.out.println("-----" + e.getMessage());
+			e.printStackTrace();
 		}
 
 		System.out.println("--main end");
